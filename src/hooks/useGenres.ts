@@ -1,10 +1,10 @@
 import { useQuery } from '@tanstack/react-query';
 import ms from 'ms';
 import genres from '../data/genres';
-import APIClient from '../services/api-client';
 import Genre from '../entities/Genre';
+import APIClient from '../services/api-client';
 
-const apiClient = new APIClient<Genre>('/genres');
+const apiClient = new APIClient<Genre>('/api/v1/genres');
 
 const useGenres = () =>
   useQuery({

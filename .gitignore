@@ -25,3 +25,6 @@ dist-ssr
 
 package-lock.json
 .vercel
+
+.env
+.env.production
